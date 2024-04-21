@@ -101,16 +101,8 @@ class CustomQdrantRetriever(dspy.Retrieve):
         # Sort passages by their accumulated scores in descending order
         sorted_passages = sorted(passages_scores.items(), key=lambda x: x[1], reverse=True)[:k]
 
-        passages = []
-        metadata = []
-        probs = []
-        for id, score in sorted_passages:
-            passages_content[id]['metadata']['score'] = score
-            
-            passages.append(passages_content[id]['page_content'])
-            metadata.append(passages_content[id]['metadata'])
-            probs.append(score)
-
-        return dspy.Prediction(passages=passages, metadata=metadata, probs=probs)
+        # Wrap each sorted passage in a dotdict with 'long_text'
+        passages = [dotdict({"long_text": f"{passages_content[id]['page_content']}"}) for id, score in sorted_passages]
+        return passages
 
         

@@ -3,3 +3,4 @@ __pycache__/
 venv/
 *.log
 qdrant_storage/
+local_cache
