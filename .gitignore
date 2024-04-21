@@ -4,3 +4,4 @@ venv/
 *.log
 qdrant_storage/
 local_cache
+test.py
