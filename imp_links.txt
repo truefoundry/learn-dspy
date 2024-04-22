@@ -1,0 +1,11 @@
+https://github.com/stanfordnlp/dspy/issues/82
+https://gist.github.com/eyast/acc4b8fdb39fadca9baa2d9307429569#file-email_dspy-py -> Email classification (1)
+https://gist.github.com/eyast/994c2731c072727b9d82c439a5c3c169 -> Email classification (2)
+https://huggingface.co/datasets/eelang/dsp_examples/blob/main/dsp_ds_10.csv -> Data for the same
+
+https://github.com/stanford-futuredata/ColBERT#running-a-lightweight-colbertv2-server
+https://github.com/stanfordnlp/dspy/issues/778 (VLLM)
+https://github.com/stanfordnlp/dspy/issues/249#issuecomment-1868866406 (Async io)
+
+https://github.com/SynaLinks/HybridAGI/tree/dspy
+https://github.com/weaviate/recipes/tree/main/integrations/dspy
